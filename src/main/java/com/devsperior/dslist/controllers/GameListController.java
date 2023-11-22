@@ -25,8 +25,7 @@ public class GameListController {
 	
 	@GetMapping
 	public List<GameListDTO> findAll(){
-		List<GameListDTO> result = gameListService.findAll();
-		return result;
+		return gameListService.findAll();
 	}
 	
 	@GetMapping(value = "/{listId}/games")
